@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="162dp"
+    android:layout_height="130dp"
+    android:foreground="@drawable/effect"
+    android:layout_row="0"
+    android:clickable="true"
+    android:layout_column="0"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="10dp"
+    app:cardElevation="5dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Ename_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="Mevalar"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Enumber_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="52 xil"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/circle_color"
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:src="@drawable/yellow_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/image_item"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_item"
+                android:layout_width="86dp"
+                android:layout_height="64dp"
+                android:src="@drawable/limon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

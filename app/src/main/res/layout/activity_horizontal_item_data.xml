@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Firebase.Horizontal_Fragment_item_page">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="14dp"
+            android:src="@drawable/back_ic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/leble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="Add praducts"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/L"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leble">
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp" />
+
+            <EditText
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@null"
+                android:textAllCaps="true"
+
+                android:fontFamily="@font/proxima_nova_bold"
+                android:hint="mahsulot nomi"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@null"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:hint="narxi"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingStart="10dp" />
+
+            <EditText
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@null"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:hint="maxsulot haqida"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="10dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp" />
+
+            <ImageView
+                android:id="@+id/image_item_selected"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:background="@color/ochhhblak"
+                android:layout_height="200dp" />
+
+            <Button
+                android:id="@+id/select_image_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/btn_shape_all"
+                android:text="select image"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_btn_favorit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/btn_shape_all"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="Add to products"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/L" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_btn_favorit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

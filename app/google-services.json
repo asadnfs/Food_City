@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78412068329",
+    "project_id": "food-city-fbfd5",
+    "storage_bucket": "food-city-fbfd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78412068329:android:0bfc603c12992306930778",
+        "android_client_info": {
+          "package_name": "com.xa.food_city"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78412068329-igl0rqjej74fjf214smb28b64a7vvhbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPMsBMopc29aS1F7DokWCc3Y4SLmP94o8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78412068329-igl0rqjej74fjf214smb28b64a7vvhbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

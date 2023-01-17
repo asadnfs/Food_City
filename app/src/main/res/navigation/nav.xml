@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/Asosiy"
+    >
+    <fragment
+        android:id="@+id/Profil"
+        android:name="com.xa.food_city.Fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/Sevimli"
+        android:name="com.xa.food_city.Fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/Asosiy"
+        android:name="com.xa.food_city.Fragments.MainFragment"
+        android:label="mainFragment" />
+    <fragment
+        android:id="@+id/Kategoria"
+        android:name="com.xa.food_city.Fragments.CatigoryFragment"
+        android:label="CatigoryFragment" />
+    <fragment
+        android:id="@+id/Savat"
+        android:name="com.xa.food_city.Fragments.BascetFragment"
+        android:label="bascetFragment" />
+</navigation>
